@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Welcome | Shreeva</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;900&family=Monoton&family=Poiret+One&display=swap" rel="stylesheet"> 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Shreeva</title>
+	<meta name="title" content="Shreeva Pvt Ltd">
+	<meta name="description"
+	  content="The official website of shreeva. Where designs and software are crafted with love and effort. And the results always exceed any quality marks.">
+  
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://shreeva.com/">
+	<meta property="og:title" content="Shreeva Pvt Ltd">
+	<meta property="og:description"
+	  content="The official website of shreeva. Where designs and software are crafted with love and effort. And the results always exceed any quality marks.">
+	<meta property="og:image" content="https://shreeva.com/images/compressed/shreevaSocial-512.png">
+  
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://shreeva.com/">
+	<meta property="twitter:title" content="Shreeva Pvt Ltd">
+	<meta property="twitter:description"
+	  content="The official website of shreeva. Where designs and software are crafted with love and effort. And the results always exceed any quality marks.">
+	<meta property="twitter:image" content="https://shreeva.com/images/compressed/shreevaSocial-512.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Shreeva">
+	<meta name="apple-mobile-web-app-title" content="Shreeva">
+	<meta name="theme-color" content="#6a1da5">
+	<meta name="msapplication-navbutton-color" content="#6a1da5">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="msapplication-starturl" content="/">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+<body class="bg-img body-bg">
+	<div class="rain-area" data-background-image="" id="rainy-parent">
+		<img class="w-100" src="img (4).jpg" id="rainy-image" alt="">
+	</div>
+	<div class="body">
+		<div class="title">
+			<img class="logo" src="shreeva.png" alt="Shreeva">
+			<p class="tag">We Are <strong>#Selfless</strong></p>
+			<!-- <p class="small-title">Our New Website</p> -->
+			<!-- <span class="main-title">coming soon</span> -->
+			<p class="response"><b>You</b> must be wondering, why <b>we</b> don't have an active website. <br> It's because <b>we</b> don't work for ourselves <br> <b>We</b>&nbsp;<span id="typer"></span>&nbsp;for <b>you</b>.</p>
+			<!-- <hr> -->
+			<br>
+			<br>
+			<br>
+			<p class="response">यावानथर्व&nbsp;&nbsp;उदपाने&nbsp;&nbsp;सवर्वत:&nbsp;&nbsp;सम्प्लुतोदके|</p>
+			<!-- <p></p> -->
+			<!-- <input class="mail" id="mail" onfocusin="showSubmit()" onfocusout="checkAndHide()"  placeholder="Subscribe to hear more" type="email" name="subscription" id="email"> -->
+			<!-- <button id="submit"></button> -->
+			<br>
+		</div>
+		<div class="contact">
+			<p class="response">Contact Us</p>
+			<p>contact@shreeva.com</p>
+			<p>+91-9621062111</p>
+		</div>
+	</div>
+
+	<script src="js/rainyday.min.js"></script>
+	<script>
+		function typerStarter(){
+			var app = document.getElementById('typer');
+			var typewriter = new Typewriter(app, {
+				loop: true
+			});
+			typewriter.typeString('work')
+			.pauseFor(2500)
+			.deleteAll()
+			.start();
+		}
+		function rain() {
+			var image = document.getElementById('rainy-image');
+			var parent = document.getElementById('rainy-parent');
+			image.onload = function() {
+				var engine = new RainyDay({
+					image: this,
+					parentElement: parent,
+					blur:20
+				});
+				if (window.innerWidth > 700){
+
+					engine.rain([ [3, 3, 0.88], [7, 7, 0.9], [6, 10, 1] ], 150);
+				} else {
+					engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [5, 5, 1] ], 200);
+				}
+			};
+			image.crossOrigin = 'anonymous';
+			image.src = $("#rainy-image").attr("src");
+		}
+		function showSubmit(){
+			alert("kjdshakj")
+		}
+		var showSubmit = false;
+		window.addEventListener("load", rain, false);
+		window.addEventListener("load", typerStarter, false);
+	</script>
+</body>
+</html>

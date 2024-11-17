@@ -1,0 +1,28 @@
+{
+  "name": "shreeva-development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gulp compressProjectImages compressProjectNestedImages compressProjectPortfolioImages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swayambhu-innovations/shreeva-development.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swayambhu-innovations/shreeva-development/issues"
+  },
+  "homepage": "https://github.com/swayambhu-innovations/shreeva-development#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-sharp-responsive": "^0.3.0"
+  },
+  "dependencies": {
+    "generate-service-worker": "^2.0.5"
+  }
+}

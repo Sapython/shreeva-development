@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
+    integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Shreeva">
+  <meta name="apple-mobile-web-app-title" content="Shreeva">
+  <meta name="theme-color" content="#6a1da5">
+  <meta name="msapplication-navbutton-color" content="#6a1da5">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Julius+Sans+One&family=Montserrat&family=Poppins:wght@300&family=Quicksand&family=Syne:wght@600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script async src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+  <!-- <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="//code.jivosite.com/widget/fSgc5R03kv" async></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <title>Shreeva</title>
+
+  <script>
+    if (window.innerWidth > 568) {
+      window.location.href = "./index.html";
+    }
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <picture>
+      <source srcset="assets/compressed/logo-256.avif">
+      <source srcset="assets/compressed/logo-256.webp">
+      <img id="shreevaHeaderImage" src="assets/compressed/logo-256.png" alt="Shreeva Logo">
+    </picture>
+    <picture>
+      <img onClick="toggleNav()" class="menu-icon" width="32px" src="assets/icons/align-right.svg" alt="Shreeva Logo">
+    </picture>
+    <!-- <img onClick="toggleNav()" class="menu-icon" width="32px" src="assets/icons/align-right.svg"> -->
+  </div>
+  <div class="menu-bar" id="navbar">
+    <nav>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#intro">Intro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#showcase">Showcase</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#clients">Our Partners</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content" id="intro">
+    <div class="headings">
+      <p id="heading">SHREEVA</p>
+    </div>
+    <!-- <img src="assets/logo1.png" alt="" data-aos="zoom-in-up"> -->
+    <svg width="80%" id="mainLogo" viewBox="0 0 877 525" fill="none" xmlns="http://www.w3.org/2000/svg"
+      style="display:none;">
+      <!-- path one -->
+      <path style="animation-delay: 500ms;" d="M3 436.86C100.746 505.38 298.575 581.746 437.019 436.86"
+        stroke="url(#paint10_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <path style="animation-delay: 500ms;" d="M3 438.807C100.746 370.288 298.575 293.922 437.019 438.807"
+        stroke="url(#paint11_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <!-- path two -->
+      <path style="animation-delay: 800ms;" d="M66.6304 220.351C117.021 328.564 250.163 493.614 442.502 437.361"
+        stroke="url(#paint12_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <path style="animation-delay: 800ms;" d="M65.6566 222.038C184.567 211.571 394.075 244.351 441.528 439.047"
+        stroke="url(#paint13_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <!-- Path three -->
+      <path style="animation-delay: 1100ms;" d="M221.223 62.0276C210.756 180.938 243.536 390.446 438.232 437.899"
+        stroke="url(#paint2_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <path style="animation-delay: 1100ms;" d="M219.536 63.0013C327.75 113.392 492.799 246.534 436.546 438.873"
+        stroke="url(#paint3_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <!-- path four -->
+      <path style="animation-delay: 1400ms;" d="M439.184 4C361.009 101.746 273.883 299.575 439.184 438.019"
+        stroke="url(#paint0_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <path style="animation-delay: 1400ms;" d="M436.962 4C515.137 101.746 602.263 299.575 436.962 438.019"
+        stroke="url(#paint1_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <!-- path five -->
+      <path style="animation-delay: 1700ms;" d="M654.296 62.0276C664.762 180.938 631.983 390.446 437.286 437.899"
+        stroke="url(#paint4_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <path style="animation-delay: 1700ms;" d="M655.982 63.0013C547.769 113.392 382.72 246.534 438.973 438.873"
+        stroke="url(#paint5_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <!-- path six -->
+      <path style="animation-delay: 2000ms;" d="M815.554 220.351C765.163 328.564 632.021 493.614 439.683 437.361"
+        stroke="url(#paint6_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <path style="animation-delay: 2000ms;" d="M816.528 222.038C697.617 211.571 488.109 244.351 440.657 439.047"
+        stroke="url(#paint7_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <!-- path seven -->
+      <path style="animation-delay: 2300ms;" d="M874 434.638C776.254 503.158 578.425 579.524 439.981 434.638"
+        stroke="url(#paint8_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <path style="animation-delay: 2300ms;" d="M874 436.585C776.254 368.066 578.425 291.7 439.981 436.585"
+        stroke="url(#paint9_linear_25_46)" stroke-width="10" stroke-linejoin="round" />
+      <defs>
+        <linearGradient id="paint0_linear_25_46" x1="392.153" y1="4" x2="392.153" y2="438.019"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_25_46" x1="483.993" y1="4" x2="483.993" y2="438.019"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint2_linear_25_46" x1="185.523" y1="82.6388" x2="402.533" y2="458.51"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint3_linear_25_46" x1="255.236" y1="42.3901" x2="472.245" y2="418.261"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint4_linear_25_46" x1="689.995" y1="82.6388" x2="472.986" y2="458.51"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint5_linear_25_46" x1="620.283" y1="42.3901" x2="403.273" y2="418.261"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint6_linear_25_46" x1="836.165" y1="256.051" x2="460.294" y2="473.06"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint7_linear_25_46" x1="795.917" y1="186.338" x2="420.046" y2="403.348"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint8_linear_25_46" x1="874" y1="475.86" x2="439.981" y2="475.86"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint9_linear_25_46" x1="874" y1="395.363" x2="439.981" y2="395.363"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint10_linear_25_46" x1="3" y1="478.082" x2="437.019" y2="478.082"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint11_linear_25_46" x1="3" y1="397.585" x2="437.019" y2="397.585"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint12_linear_25_46" x1="46.0191" y1="256.051" x2="421.89" y2="473.06"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+        <linearGradient id="paint13_linear_25_46" x1="86.2678" y1="186.338" x2="462.139" y2="403.348"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#CB1697" />
+          <stop offset="1" stop-color="#0A0ABB" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <p class="sub-title">A true partner in <br> your CREATION</p>
+  </div>
+  <img class="img-fluid" width="100%" src="assets/icons/bg-bottom.svg" alt="Shreeva Softech Innovations">
+  <div class="first-sec" id="showcase">
+    <section class="two">
+      <object data="assets/sankh.svg" style="transform: rotateZ(90deg);" type="image/svg+xml" id="shankha"
+        data-aos="fade-in" data-aos-once="true" alt="Shell"></object>
+      <div>
+        <h2 data-aos="fade-in" data-aos-once="true" class="sectionTitle">SHOWCASE</h2>
+      </div>
+    </section>
+    <section class="two m-top-42 card-with-data">
+      <object data="assets/icons/card-design.svg" class="card-design" type="image/svg+xml" id="card" data-aos="fade-in"
+        data-aos-once="true" alt="Shell"></object>
+      <div class="card" data-aos-once="true" data-aos="zoom-in-left">
+        <div class="swiper projectsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide project">
+              <picture>
+                <source srcset="assets/portfolio/compressed/sss-pay-512.avif">
+                <source srcset="assets/portfolio/compressed/sss-pay-512.webp">
+                <img src="assets/portfolio/compressed/sss-pay-512.png" alt="SSS Pay">
+              </picture>
+              <p class="card-title">
+                SSS PAY
+              </p>
+              <p class="card-desc">
+                AEPS payments for remote villages of Bharat. Built-in wallet and PAN services to make life easy for
+                retailers. All this with a clean UI that’s is made for common people.
+              </p>
+            </div>
+            <div class="swiper-slide project">
+              <picture>
+                <source srcset="assets/portfolio/compressed/Madhav-Seva-512.avif">
+                <source srcset="assets/portfolio/compressed/Madhav-Seva-512.webp">
+                <img src="assets/portfolio/compressed/Madhav-Seva-512.png" alt="MADHAV SEVA">
+              </picture>
+              <p class="card-title">
+                MADHAV SEVA
+              </p>
+              <p class="card-desc">
+                A platform for all the services of ISKCON Prayagraj. Built with scalability at its base. This means our
+                client can scale up hassle free as the basic structure is built accordingly.
+
+              </p>
+            </div>
+            <div class="swiper-slide project">
+              <picture>
+                <source srcset="assets/portfolio/compressed/mobile-sng-512.avif">
+                <source srcset="assets/portfolio/compressed/mobile-sng-512.webp">
+                <img src="assets/portfolio/compressed/mobile-sng-512.png" alt="BEEMA DUKAAN">
+              </picture>
+              <p class="card-title">
+                SNG And Sons
+              </p>
+              <p class="card-desc">
+                Sng Sons Group runs stocking depo’s for various popular brand names e.g. parle,dabur,haldirams etc.for
+                whom Shreeva developed a Stock in transit, HRMS and logistic management application
+
+              </p>
+            </div>
+            <div class="swiper-slide project">
+              <picture>
+                <source srcset="assets/compressed/mobile-sprl-512.avif">
+                <source srcset="assets/compressed/mobile-sprl-512.webp">
+                <img src="assets/compressed/mobile-sprl-512.png" alt="SSS Pay">
+              </picture>
+              <p class="card-title">
+                SPRL Group
+              </p>
+              <p class="card-desc">
+                Fired by passion to translate a dream into reality S.P.R.L. Group began in 2010 Starting with factories
+                at Allahabad U.P., India,and also runs hotel triveni sangam under its brand whose online food and room
+                booking platform is also developed by Shreeva.
+              </p>
+            </div>
+            <div class="swiper-slide project">
+              <picture>
+                <source srcset="assets/portfolio/compressed/mobile-mahavadanya-512.avif">
+                <source srcset="assets/portfolio/compressed/mobile-mahavadanya-512.webp">
+                <img src="assets/portfolio/compressed/mobile-mahavadanya-512.png" alt="Mahavadanya">
+              </picture>
+              <p class="card-title">
+                Mahavadanya
+              </p>
+              <p class="card-desc">
+                A shared workspace booking application.where students can book slots available on monthly,yearly & even
+                daily basis.built while keeping ease of access & budget constraints of students in mind
+
+              </p>
+            </div>
+            <div class="swiper-slide project">
+              <picture>
+                <source srcset="assets/portfolio/compressed/beema-dukaan-512.avif">
+                <source srcset="assets/portfolio/compressed/beema-dukaan-512.webp">
+                <img src="assets/portfolio/compressed/beema-dukaan-512.png" alt="BEEMA DUKAAN">
+              </picture>
+              <p class="card-title">
+                BEEMA DUKAAN
+              </p>
+              <p class="card-desc">
+                One stop solution for all kind of insurance services. Renew, on call services, compare personalised
+                quotes of car,health, life and travel insurances.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="second-sec" id="services">
+    <section class="two">
+      <div>
+        <h2 data-aos="fade-in" data-aos-once="true" class="sectionTitle">OUR SERVICES</h2>
+      </div>
+      <object data="assets/maur-pankh.svg" style="transform: rotateZ(0);" type="image/svg+xml" id="maur-pankha"
+        data-aos="fade-in" data-aos-once="true" alt="Shell"></object>
+    </section>
+    <section class="two card-with-data">
+      <object data="assets/icons/card-design-r.svg" class="card-design" type="image/svg+xml" id="card"
+        data-aos="fade-in" data-aos-once="true" alt="Shell"></object>
+      <div class="card" data-aos="zoom-in-left" data-aos-once="true">
+        <div class="swiper projectsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide project">
+              <picture>
+                <source srcset="assets/compressed/capture-3-512.avif">
+                <source srcset="assets/compressed/capture-3-512.webp">
+                <img src="assets/compressed/capture-3-512..png" alt="Custom Websites">
+              </picture>
+              <p class="card-title">
+                Multi Platform App
+              </p>
+              <p class="card-desc">
+                Web app develpoment completly managed Progressive Web App with exact copy and offline support.
+              </p>
+            </div>
+            <div class="swiper-slide project">
+              <picture>
+                <source srcset="assets/compressed/app-development-512.avif">
+                <source srcset="assets/compressed/app-development-512.webp">
+                <img src="assets/compressed/app-development-512.png" alt="Madhva Seva">
+              </picture>
+              <p class="card-title">
+                Web-App Development
+              </p>
+              <p class="card-desc">
+                An advanced platform which can totally transform and run onto Android, IOs, Windows, Web, and even
+                toaster (Smart Toaster)
+              </p>
+            </div>
+            <div class="swiper-slide project">
+              <picture>
+                <source srcset="assets/compressed/capture4-512.avif">
+                <source srcset="assets/compressed/capture4-512.webp">
+                <img src="assets/compressed/capture4-512.png" alt="Madhva Seva">
+              </picture>
+              <p class="card-title">
+                Website Development
+              </p>
+              <p class="card-desc">
+                An advanced feature rich website with a pre-designed template made for all your needs.Comes with a
+                full month support from the developers
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <img src="#" alt="Madhav Seva" class="card-img img-fluid">
+          <div class="card-title">Madhav Seva</div>
+          <div class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam hic praesentium ipsa obcaecati. Tenetur repudiandae, fuga suscipit eligendi consequuntur vitae nostrum, nam placeat amet sunt libero minima molestiae enim rerum?e</div> -->
+      </div>
+    </section>
+  </div>
+  <!-- ADDED BY VISHNU -->
+
+  <div class="our-partners" id="clients">
+    <div class="garud">
+      <p class="sectionTitle text-center">Our Partners</p>
+      <picture>
+        <source srcset="assets/images/compressed/garuda-open-wings-2-512.avif">
+        <source srcset="assets/images/compressed/garuda-open-wings-2-512.webp">
+        <img src="assets/images/compressed/garuda-open-wings-2-512.png" alt="Our Partners">
+      </picture>
+    </div>
+    <div class="logos" data-aos-once="true" data-aos="zoom-in-left">
+      <picture>
+        <source srcset="assets/images/compressed/logo--1-512.avif">
+        <source srcset="assets/images/compressed/logo--1-512.webp">
+        <img src="assets/images/compressed/logo--1-512.png" alt="Our Partners">
+      </picture>
+      <picture>
+        <source srcset="assets/images/compressed/logo--2-512.avif">
+        <source srcset="assets/images/compressed/logo--2-512.webp">
+        <img src="assets/images/compressed/logo--2-512.png" alt="Our Partners">
+      </picture>
+    </div>
+    <div class="logos" data-aos-once="true" data-aos="zoom-in-right">
+      <picture>
+        <source srcset="assets/images/compressed/logo--3-512.avif">
+        <source srcset="assets/images/compressed/logo--3-512.webp">
+        <img src="assets/images/compressed/logo--3-512.png" alt="Our Partners">
+      </picture>
+      <picture>
+        <source srcset="assets/images/compressed/logo--4-512.avif">
+        <source srcset="assets/images/compressed/logo--4-512.webp">
+        <img src="assets/images/compressed/logo--4-512.png" alt="Our Partners">
+      </picture>
+    </div>
+    <div class="logos" data-aos-once="true" data-aos="zoom-in-left">
+      <picture>
+        <source srcset="assets/images/compressed/logo--5-512.avif">
+        <source srcset="assets/images/compressed/logo--5-512.webp">
+        <img src="assets/images/compressed/logo--5-512.png" alt="Our Partners">
+      </picture>
+      <picture>
+        <source srcset="assets/images/compressed/logo--7-512.avif">
+        <source srcset="assets/images/compressed/logo--7-512.webp">
+        <img src="assets/images/compressed/logo--7-512.png" alt="Our Partners">
+      </picture>
+    </div>
+  </div>
+  <picture>
+    <source srcset="assets/images/compressed/line-4-512.avif">
+    <source srcset="assets/images/compressed/line-4-512.webp">
+    <img src="assets/images/compressed/line-4-512.png" id="line-4">
+  </picture>
+  <div class="contact-us">
+    <div class="gaiya">
+      <img src="assets/images/Gaiya.svg" alt="" data-aos-once="true" data-aos="zoom-in-left">
+      <p class="text-right" data-aos-once="true" data-aos="zoom-in-right">Contact<br> Us</p>
+    </div>
+    <div class="form" data-aos-once="true" data-aos="zoom-in">
+      <input type="text" value="Subject">
+      <input type="text" value="Your Email">
+      <textarea placeholder="Your Message Here" cols="30" rows="05"></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </div>
+  </div>
+  <!-- <img src="assets/images/line-5.png" alt="" id="line5"> -->
+  <picture>
+    <source srcset="assets/images/compressed/line-5-256.avif">
+    <source srcset="assets/images/compressed/line-5-256.webp">
+    <img src="assets/images/compressed/line-5-256.png" id="line5">
+  </picture>
+  <!-- ourteam -->
+  <h2 data-aos-once="true" data-aos="fade-in" class="sectionTitle text-center" id="team">Our Team</h2>
+  <div class="our-team">
+    <div class="our-team1" data-aos-once="true" data-aos="zoom-in-up">
+      <!-- <img src="assets/team2.jpg" alt=""> -->
+      <picture>
+        <source srcset="assets/compressed/team2-256.avif">
+        <source srcset="assets/compressed/team2-256.webp">
+        <img src="assets/compressed/team2-256.png" alt="Our Partners">
+      </picture>
+      <p id="name">Shreeyanshu kesarwani</p>
+      <p>Founder and CEO, An entrepreneur having the courage to turn his dreams into reality</p>
+    </div>
+    <div class="our-team1" data-aos-once="true" data-aos="zoom-in-left">
+      <!-- <img src="assets/team1.jpg" alt=""> -->
+      <picture>
+        <source srcset="assets/compressed/team1-256.avif">
+        <source srcset="assets/compressed/team1-256.webp">
+        <img src="assets/compressed/team1-256.png" alt="Our Partners">
+      </picture>
+      <p id="name">Kumar saptam</p>
+      <p>Leading the Development Team, experience of 6 years working as a developer.</p>
+    </div>
+    <div class="our-team1" data-aos-once="true" data-aos="zoom-in-right">
+      <!-- <img src="assets/team3.png" alt=""> -->
+      <picture>
+        <source srcset="assets/compressed/team3-256.avif">
+        <source srcset="assets/compressed/team3-256.webp">
+        <img src="assets/compressed/team3-256.png" alt="Our Partners">
+      </picture>
+      <p id="name">Chinmay Samal</p>
+      <p>Leading the Creative Team, A man with hundreds of popping ideas and have the caliber to implement them.</p>
+    </div>
+    <div class="our-team1" data-aos-once="true" data-aos="zoom-in-left">
+      <!-- <img src="assets/team4.jpeg" alt=""> -->
+      <picture>
+        <source srcset="assets/compressed/team4-256.avif">
+        <source srcset="assets/compressed/team4-256.webp">
+        <img src="assets/compressed/team4-256.png" alt="Our Partners">
+      </picture>
+      <p id="name">Shivam Gupta</p>
+      <p>A Man filled with confidence and represent Shreeva the way it actually is.</p>
+    </div>
+  </div>
+  <!-- ourteam -->
+  <footer>
+    <!-- <img src="assets/Vishnu.png" alt="" id="vishnu" data-aos="zoom-in-left"> -->
+    <picture>
+      <source srcset="assets/compressed/Vishnu-1024.avif">
+      <source srcset="assets/compressed/Vishnu-1024.webp">
+      <img src="assets/compressed/Vishnu-1024.png" id="vishnu" data-aos-once="true" data-aos="zoom-in-left"
+        alt="Our Partners">
+    </picture>
+    <svg viewBox="0 0 120 28">
+      <defs>
+        <mask id="xxx">
+          <circle cx="7" cy="12" r="40" fill="#fff" />
+        </mask>
+
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="
+               1 0 0 0 0  
+               0 1 0 0 0  
+               0 0 1 0 0  
+               0 0 0 13 -9" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+        <path id="wave"
+          d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+      </defs>
+
+      <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+      <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+      <g class="gooeff">
+        <circle class="drop drop1" cx="20" cy="2" r="1.8" />
+        <circle class="drop drop2" cx="25" cy="2.5" r="1.5" />
+        <circle class="drop drop3" cx="16" cy="2.8" r="1.2" />
+        <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+
+        <!-- g mask="url(#xxx)">
+        <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+        </g>
+      </g -->
+    </svg>
+    <div id="footer-1">
+      <p class="head">SHREEVA</p>
+      <p>© 2022 <span>Shreeva</span> All Rights Reserved.</p>
+    </div>
+    <div class="links">
+      <ul>
+        <a href="#">
+          <li>Contact Us</li>
+        </a>
+        <a href="#">
+          <li>About Us</li>
+        </a>
+        <a href="#">
+          <li>Privacy Policy</li>
+        </a>
+      </ul>
+    </div>
+  </footer>
+  <!-- ADDED BY VISHNU -->
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500
+    });
+    let animateGarud = false;
+    let pageLoaded = false;
+    window.onload = function () {
+      console.log("loaded")
+      //hide the preloader
+      setTimeout(() => {
+        pageLoaded = true;
+        document.querySelector("#mainLogo").style.display = "block";
+        // document.querySelector("#mainLogo").style.animation = "fadeIn 1.5s forwards;";
+      }, 500)
+
+    }
+  </script>
+  <script>
+    function toggleNav() {
+      if (document.getElementById("navbar").style.display === 'none') {
+        document.getElementById("navbar").style.display = 'flex';
+      } else {
+        document.getElementById("navbar").style.display = 'none';
+      }
+
+    }
+  </script>
+  <script>
+    new Vivus('garudLeft', { duration: 500, type: 'sync' }, (data) => { console.log(data) });
+    new Vivus('garudHead', { duration: 200, type: 'sync' }, (data) => { console.log(data) });
+    new Vivus('garudRight', { duration: 500, type: 'sync' }, (data) => { console.log(data) });
+    new Vivus('gau', { duration: 500, type: 'sync' }, (data) => { console.log(data) });
+    new Vivus('shankha', { duration: 500, type: 'sync' }, (data) => { console.log(data) });
+    new Vivus('pankh', { duration: 500, type: 'sync' }, (data) => { console.log(data) });
+    new Vivus('lineOne', { duration: 100, type: 'sync' }, (data) => { console.log("Data", data) });
+    new Vivus('lineTwo', { duration: 100, type: 'sync' }, (data) => { console.log("Data", data) });
+    new Vivus('lineThree', { duration: 100, type: 'sync' }, (data) => { console.log("Data", data) });
+    new Vivus('lineFour', { duration: 100, type: 'sync' }, (data) => { console.log("Data", data) });
+      // var animateShankh = false;
+      // var animatePankh = false;
+      // var animateGaiyaa = false;
+      // var shankhObserver = new MutationObserver((changes) => {
+      //   if (pageLoaded && !animateShankh) {
+      //     new Vivus('shankha', { duration: 4000 }, (data) => { console.log(data) });
+      //     animateShankh = true
+      //   }
+      // })
+      // var pankhObserver = new MutationObserver((changes) => {
+      //   if (pageLoaded && !animateShankh) {
+      //     new Vivus('pankh', { duration: 4000 }, (data) => { console.log(data) });
+      //     animateShankh = true
+      //   }
+      // })
+      // var gaiyaaObserver = new MutationObserver((changes) => {
+      //   if (pageLoaded && !animateShankh) {
+      //     new Vivus('gau', { duration: 1000}, (data) => { console.log(data) });
+      //     animateShankh = true
+      //   }
+      // })
+      // shankhObserver.observe(document.getElementById('shankha'), { attributes: true, childList: true })
+      // pankhObserver.observe(document.getElementById('pankh'), { attributes: true, childList: true })
+      // gaiyaaObserver.observe(document.getElementById('gau'), { attributes: true, childList: true })
+      // observer.observe(targetNode[0], { attributes: true, childList: true });
+
+  </script>
+  <script src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+<script>
+  const swiper = new Swiper('.projectsSwiper', {
+    loop: true,
+    navigation: false,
+    autoplay: {
+      delay: 4000,
+    },
+  });
+  // new Vivus('shankha', { duration: 500, type: 'sync' }, (data) => { console.log(data) });
+</script>
+
+</html>
